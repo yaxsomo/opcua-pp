@@ -55,4 +55,10 @@ void log(UA_Server* server, LogLevel level, LogCategory category, std::string_vi
 /// Generate log message with servers's logger.
 void log(Server& server, LogLevel level, LogCategory category, std::string_view msg);
 
+//Get Log Level Name
+std::string getLogLevelName(LogLevel level);
+
+//Get Log Category Name
+std::string getLogCategoryName(LogCategory category);
+
 }  // namespace opcua
