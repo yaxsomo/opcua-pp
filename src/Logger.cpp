@@ -45,4 +45,31 @@ void log(Server& server, LogLevel level, LogCategory category, std::string_view 
     log(server.handle(), level, category, msg);
 }
 
+
+std::string getLogLevelName(LogLevel level) {
+    switch (level) {
+        case LogLevel::Trace:       return "Trace";
+        case LogLevel::Debug:       return "Debug";
+        case LogLevel::Info:        return "Info";
+        case LogLevel::Warning:     return "Warning";
+        case LogLevel::Error:       return "Error";
+        case LogLevel::Fatal:       return "Fatal";
+        // Handle other cases if necessary
+        default:                    return "Unknown";
+    }
+}
+
+std::string getLogCategoryName(LogCategory category) {
+    switch (category) {
+        case LogCategory::Network:          return "Network";
+        case LogCategory::SecureChannel:    return "SecureChannel";
+        case LogCategory::Session:          return "Session";
+        case LogCategory::Server:           return "Server";
+        case LogCategory::Client:           return "Client";
+        case LogCategory::Userland:         return "Userland";
+        case LogCategory::SecurityPolicy:    return "SecurityPolicy";
+        // Handle other cases if necessary
+        default:                            return "Unknown";
+    }
+}
 }  // namespace opcua
