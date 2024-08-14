@@ -9,7 +9,7 @@
 [ci-compatibility]: https://github.com/open62541pp/open62541pp/actions/workflows/open62541-compatibility.yml
 
 <div align="center">
-  <h1>open62541++</h1>
+  <h1>opcua-pp</h1>
 
   [![License: MPL 2.0](https://img.shields.io/badge/License-MPL%202.0-blue.svg)](https://github.com/open62541pp/open62541pp/blob/master/LICENSE)
   [![CI](https://github.com/open62541pp/open62541pp/actions/workflows/ci.yml/badge.svg)][ci]
